@@ -1,0 +1,1 @@
+export const CONFIG_OPTIONS = 'CHAIN_API_OPTIONS';
