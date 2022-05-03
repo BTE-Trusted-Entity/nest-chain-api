@@ -10,7 +10,8 @@
     "prepublish:next": "npm run build",
     "publish:next": "npm publish --access public --tag next",
     "prerelease": "npm run build",
-    "release": "release-it"
+    "release": "release-it",
+    "postinstall": "npm run build"
   },
   "license": "MIT",
   "peerDependencies": {
@@ -48,5 +49,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/KILTprotocol/nest-chain-api.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   }
 }
